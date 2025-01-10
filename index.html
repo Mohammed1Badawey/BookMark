@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookMark</title>
+    <link rel="icon" href="images/12461308.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- ======== Font Awesome ========= -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+  </head>
+
+  <body class="my-light">
+    <main class="p-4">
+      <div class="my-theme">
+        <button class="btn btn-dark rounded-5" data-bs-theme-value="dark">
+          <i class="fa-sharp fa-solid fa-moon"></i>
+        </button>
+
+        <button
+          class="btn btn-light d-none rounded-5"
+          data-bs-theme-value="light"
+        >
+          <i class="fa-light fa-sun"></i>
+        </button>
+      </div>
+
+      <div class="container">
+        <header class="text-center d-flex justify-content-center">
+          <h1 class="position-relative my-4">Bookmarker</h1>
+        </header>
+
+        <div class="forms py-4">
+          <div class="d-flex justify-content-center">
+            <h2 class="">
+              <i class="fa-solid fa-bookmark"></i>  Bookmark your favorite  
+              sites  <i class="fa-solid fa-bookmark"></i>
+            </h2>
+          </div>
+          <form action="" class="d-flex flex-column myForm">
+            <label for="siteName" class="fw-semibold mt-4 pb-2"
+              ><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label
+            >
+            <input
+              id="siteName"
+              type="text"
+              placeholder="Website Name"
+              class="form-control"
+            />
+
+            <label for="siteURL" class="fw-semibold mt-4 pb-2"
+              ><i class="fa-solid fa-link pe-2"></i> Site URL</label
+            >
+            <input
+              id="siteURL"
+              type="text"
+              placeholder="Website URL"
+              class="form-control"
+            />
+
+            <button class="btn btn-danger px-5 m-auto mt-4 btn-addSite">
+              Submit
+            </button>
+          </form>
+        </div>
+
+        <div>
+          <table class="table mt-3 text-center">
+            <thead>
+              <tr>
+                <th scope="col">Index</th>
+                <th scope="col">Website Name</th>
+                <th scope="col">Visit</th>
+                <th scope="col">Delete</th>
+              </tr>
+            </thead>
+
+            <tbody id="urlBody">
+              <tr class="align-baseline">
+                <th scope="">1</th>
+                <td class="cursorURL">Google</td>
+                <td>
+                  <button class="btn btn-success btn-visit">
+                    <i class="fa-duotone fa-solid fa-eye"></i>&nbsp; Visit
+                  </button>
+                </td>
+                <td>
+                  <button class="btn btn-danger btn-delete">
+                    <i class="fa-sharp-duotone fa-solid fa-trash"></i>&nbsp;
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- ======== JS Bootstrap - main ======== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/darkmodetoggle.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

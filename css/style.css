@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Pacifico-400;
+    src: url(../fonts/Pacifico-Regular.ttf) ;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Righteous-400;
+    src: url(../fonts/Righteous-Regular.ttf) ;
+    font-weight: 400;
+}
+
+
+.my-light {
+    background-color: #F7ECDE;
+}
+
+h1 {
+    font-family: Pacifico-400;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 15px;
+    width: 100%;
+    background-color: #fec260;
+    z-index: -1;
+    transition: .3s;
+}
+
+h1:hover::before {
+    height: 75%
+}
+
+.forms {
+   border-width: 2px 0;
+   border-style: dotted;
+
+}
+
+h2 {
+    font-family: Righteous-400;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 5px #fec26055;
+    border: none ;
+}
+
+
+.cursorURL {
+    cursor: pointer;
+}
+
+
