@@ -45,9 +45,14 @@ form.addEventListener("submit", function (e) {
 btnSubmit.onclick = () => addSite();
 
 function addSite() {
+  if (siteName.value.trim() === "" || siteURL.value.trim() === "") {
+    alert("الرجاء ملء جميع الحقول");
+    return;
+  }
+
   let url = {
     name: siteName.value.trim(),
-    url: siteURL.value,
+    url: siteURL.value.trim(),
   };
 
   urlList.push(url);
