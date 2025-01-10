@@ -1,24 +1,3 @@
-// dark-light-mode
-
-let btnDark = document.querySelector(".btn-dark");
-let btnLight = document.querySelector(".btn-light");
-let bodyLight = document.querySelector(".my-light");
-
-btnLight.classList.add("d-none");
-btnDark.classList.remove("d-none");
-
-btnDark.addEventListener("click", () => {
-  btnDark.classList.add("d-none");
-  btnLight.classList.remove("d-none");
-  bodyLight.classList.remove("my-light");
-});
-
-btnLight.addEventListener("click", () => {
-  btnLight.classList.add("d-none");
-  bodyLight.classList.add("my-light");
-  btnDark.classList.remove("d-none");
-});
-
 //==================  CRUD  =========================//
 
 let siteName = document.querySelector("#siteName");
